@@ -1,0 +1,14 @@
+{
+  "name": "casework-autograder",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Autograder & Plagiarism Detection Engine - MERN stack",
+  "scripts": {
+    "install:all": "npm install --prefix backend && npm install --prefix frontend",
+    "test": "npm run test --prefix backend",
+    "dev": "concurrently -n API,WEB -c blue,green \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
